@@ -1,0 +1,141 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5BEB9201
+P 2550 2050
+F 0 "D1" V 2588 1933 50  0000 R CNN
+F 1 "LED" V 2497 1933 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 2550 2050 50  0001 C CNN
+F 3 "~" H 2550 2050 50  0001 C CNN
+	1    2550 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5BEB9358
+P 3050 2050
+F 0 "D2" V 3088 1933 50  0000 R CNN
+F 1 "LED" V 2997 1933 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3050 2050 50  0001 C CNN
+F 3 "~" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BEB95CA
+P 2550 2550
+F 0 "R1" H 2620 2596 50  0000 L CNN
+F 1 "200" H 2620 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2480 2550 50  0001 C CNN
+F 3 "~" H 2550 2550 50  0001 C CNN
+	1    2550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BEB95F8
+P 3050 2550
+F 0 "R2" H 3120 2596 50  0000 L CNN
+F 1 "200" H 3120 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2980 2550 50  0001 C CNN
+F 3 "~" H 3050 2550 50  0001 C CNN
+	1    3050 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2200 3050 2400
+Wire Wire Line
+	2550 1900 2550 1250
+Wire Wire Line
+	3050 1900 3050 1500
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5BEB98AD
+P 5350 2200
+F 0 "J1" H 5400 2617 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5400 2526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 5350 2200 50  0001 C CNN
+F 3 "~" H 5350 2200 50  0001 C CNN
+	1    5350 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 2400 0    50   ~ 0
+3V3\nGPIO2\nGPIO3\nGPIO4\nGND\n
+Text Notes 6250 2400 0    50   ~ 0
+5V\n5V\nGND\nGPIO14\nGPIO15
+Wire Wire Line
+	4950 1250 4950 2000
+Wire Wire Line
+	4950 2000 5150 2000
+Wire Wire Line
+	2550 1250 4950 1250
+Wire Wire Line
+	4950 2400 5150 2400
+Wire Wire Line
+	5150 2100 4800 2100
+Wire Wire Line
+	4800 2100 4800 1500
+Wire Wire Line
+	3050 1500 4800 1500
+NoConn ~ 5150 2200
+NoConn ~ 5150 2300
+NoConn ~ 5650 2000
+NoConn ~ 5650 2100
+NoConn ~ 5650 2200
+NoConn ~ 5650 2300
+NoConn ~ 5650 2400
+Wire Wire Line
+	2550 2200 2550 2400
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5BEC9AF5
+P 2750 2850
+F 0 "J3" H 2830 2842 50  0000 L CNN
+F 1 "Conn_01x02" H 2830 2751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 2850 50  0001 C CNN
+F 3 "~" H 2750 2850 50  0001 C CNN
+	1    2750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5BEC9C1C
+P 3250 2850
+F 0 "J2" H 3330 2842 50  0000 L CNN
+F 1 "Conn_01x02" H 3330 2751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3250 2850 50  0001 C CNN
+F 3 "~" H 3250 2850 50  0001 C CNN
+	1    3250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2700 2550 2850
+Wire Wire Line
+	3050 2700 3050 2850
+Wire Wire Line
+	2550 2950 2550 3150
+Wire Wire Line
+	2550 3150 3050 3150
+Wire Wire Line
+	4950 2400 4950 3150
+Wire Wire Line
+	3050 2950 3050 3150
+Connection ~ 3050 3150
+Wire Wire Line
+	3050 3150 4950 3150
+$EndSCHEMATC
